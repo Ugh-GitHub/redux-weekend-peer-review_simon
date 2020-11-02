@@ -16,32 +16,32 @@ Practicing compassionate code reviews is important (you can learn more from this
 ## Base Required Features 
 
 - Multi-Part Form:  
-  - [ ] Able to add feedback
-    - [ ] Data collected on individual pages & components
-    - [ ] Click on next takes you to the next page in sequence
-    - [ ] Data saves in DB after *all* the parts are completed (not piecemeal)
-    - [ ] Thank you page takes you back to the first view
-    - [ ] Old Data is cleared on form completion
+  - [x] Able to add feedback
+    - [x] Data collected on individual pages & components
+    - [x] Click on next takes you to the next page in sequence
+    - [x] Data saves in DB after *all* the parts are completed (not piecemeal)
+    - [x] Thank you page takes you back to the first view
+    - [x] Old Data is cleared on form completion
 
 - Client code:
-  - [ ]  Individual components for each form part
-  - [ ]  Redux setup complete
-    - [ ] Store linked to react with `<Provider>`
-    - [ ] Store setup with reducer(s) and logger middleware 
-  - [ ] Reducers & Actions Working
-    - [ ] Actions are in SCREAMING_SNAKE_CASE and semantically named
-    - [ ] Actions have a `type` key, and `payload` if sending data
-    - [ ] Reducers are returning a new state, or the old state (not mutating)
-    - [ ] Reducers are using spread correctly (to keep old data, while adding new)
-  - [ ] Review Component shows at all times with current redux state
-  - [ ] React-Redux Working
-    - [ ] `connect`ing components correctly & dispatching Actions onClick
-    - [ ] `mapStateToProps` when data is needed from Redux for submission
-  - [ ] Axios POST request to add feedback
+  - [x]  Individual components for each form part
+  - [x]  Redux setup complete
+    - [x] Store linked to react with `<Provider>`
+    - [x] Store setup with reducer(s) and logger middleware 
+  - [x] Reducers & Actions Working
+    - [x] Actions are in SCREAMING_SNAKE_CASE and semantically named
+    - [x] Actions have a `type` key, and `payload` if sending data
+    - [x] Reducers are returning a new state, or the old state (not mutating)
+    - [x] Reducers are using spread correctly (to keep old data, while adding new)
+  - [x] Review Component shows at all times with current redux state
+  - [x] React-Redux Working
+    - [x] `connect`ing components correctly & dispatching Actions onClick
+    - [x] `mapStateToProps` when data is needed from Redux for submission
+  - [x] Axios POST request to add feedback
 
 
 - Server code:   
-  - [ ] Router made for GET, POST
+  - [x] Router made for GET, POST
 
 
 ## General Items
@@ -88,40 +88,42 @@ First must be complete for score of _5 - Exceeds Expectations_
 ## Markdown
 
 ```
-Hey ___,
+Hey Simon,
 
-General Feedback.
+Great work. Integers are numbers without decimals, but that's a dumb gotcha and your code is top-notch. Curious about our conversation regarding what's best practices for security with regards to the store. Keep up the good work!
+
+Peter
 
 ---
 | Functional Requirements | Complete? |
 | --- | :---: |
-| Multi page form with client side routing and navigation (next button) | no |
-| Data stored in Redux when navigating from page to page | no |
-| User is notified when trying to leave a blank score | no |
-| Review Component displays scores and comments from current redux state | no |
-| Submit button sends data to the server via Axios | no |
-| Confirmaion Page displays after data is POSTed to the server | no |
-| Button on Confirmation Page clears Redux and starts a new survey | no |
-| Views are broken down into components | no |
+| Multi page form with client side routing and navigation (next button) | yes |
+| Data stored in Redux when navigating from page to page | yes |
+| User is notified when trying to leave a blank score | yes |
+| Review Component displays scores and comments from current redux state | yes |
+| Submit button sends data to the server via Axios | yes |
+| Confirmaion Page displays after data is POSTed to the server | yes |
+| Button on Confirmation Page clears Redux and starts a new survey | yes |
+| Views are broken down into components | yes |
 
 ---
 ### Notes:
 
-Notes on the above Functional Requirements.
+I think I mentioned the integer bug issue, but yeah, it's not a big deal. Liked you key passing payload to the store.
 
 ---
 | General Items | Complete? |
 | --- | :---: |
-| More than 15 git commits | no |
-| Commits are descriptive of the changes made or feature added | no |
-| Readme file updated | no |
-| Appropriate amount of code comments | no |
-| Code is consistently formatted | no |
-| Server code organized with router & module files | no |
+| More than 15 git commits | yes |
+| Commits are descriptive of the changes made or feature added | yes |
+| Readme file updated | yes |
+| Appropriate amount of code comments | yes |
+| Code is consistently formatted | yes |
+| Server code organized with router & module files | yes |
 
 ---
 ### Notes:
 
-Notes on General Items
+Trying to decipher commit comments is a weird art, and I think it takes a lot of time to be good at. Seems pretty solid overall. Everything looks good.
 
 ```
